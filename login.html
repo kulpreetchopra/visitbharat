@@ -16,6 +16,23 @@
     function login(){
       alert("Registered Successfully");
     }
+    function varification(){
+
+          var uname = document.getElementById('uname').value;
+          var pass=document.getElementById('pass').value;
+
+
+          if(uname=="kulpreetsingh0128@gmail.com" && pass=="1234")
+        {
+      location.assign("file:///C:/Users/HP/Desktop/VISIT%20BHARAT/about.html")
+        }
+        else
+        {
+      window.alert("login failed")
+        }
+      
+    }
+
     </script> 
   </head>
   <body> 
@@ -357,49 +374,7 @@
       </div>
     </div>
     <!-- end registration -->
-
-    <!--login start-->
-    <div class="modal fade" id="af">
-      <div class="modal-dialog" >
-        <div class="modal-content">
-          <div class="modal-header" style="background-color:#fff307;">
-            <h5 class="modal-title" style="color:blue;" id="exampleModalLabel"><i class="far fa-question-circle"style="color:black; font-size: 20px;"></i>LOGIN FORM</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span >&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" >
-            <div class="form-group">
-      <label>USER ID:</label>
-    <input type="email" name=""  class="form-control" placeholder="Enter Email Or Phone" >
-    </div>
-    <div class="form-group">
-    <label>PASSWARD:</label>
-    <input type="password" name=""class="form-control" placeholder="Enter Password">
-    <a href="" class="font-weight-light">Forgotten Passward</a>
-    </div>
-    <div class="form-group">
-    <input  class="form-control" placeholder="Enter Code" name="6_letters_code" type="text">
-    <img src="IMAGE/captcha.jpg" style="height: 37px;">
-    <a href=""class="font-weight-light" type="button"> Refresh Code</a>
-    </div>
-    <button type="button" name="" value="submit"class="btn btn-warning btn-block">LOGIN</button>
-  </div>
-            <center>
-              <h3 style="background-color:#07a6f02b">
-                <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
-                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
-                <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
-              </h3>
-            </center>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end login -->
-
+    
     <!-- slide start -->
     <div class="carousel slide" data-ride="carousel" id="myslide">
       <div class="carousel-inner">
@@ -475,21 +450,24 @@
           </div>
           <div class="modal-body" >
             <div class="form-group">
-      <label>USER ID:</label>
-    <input type="email" name=""  class="form-control" placeholder="Enter Email Or Phone" >
-    </div>
-    <div class="form-group">
-    <label>PASSWARD:</label>
-    <input type="password" name=""class="form-control" placeholder="Enter Password">
-    <a href="" class="font-weight-light">Forgotten Passward</a>
-    </div>
-    <div class="form-group">
-    <input  class="form-control" placeholder="Enter Code" name="6_letters_code" type="text">
-    <img src="IMAGE/captcha.jpg" style="height: 37px;">
-    <a href=""class="font-weight-light" type="button"> Refresh Code</a>
-    </div>
-    <button type="button" name="" value="submit"class="btn btn-warning btn-block">LOGIN</button>
-  </div>
+            <form action="#" class="bg-light" onsubmit="return varification()">
+                <label>USER ID:</label>
+                <input type="email" name="user" id="uname" class="form-control" placeholder="Enter Email Or Phone" >
+              </div>
+              <div class="form-group">
+                <label>PASSWARD:</label>
+                <input type="password" name="user" id="pass" class="form-control" placeholder="Enter Password">
+                <a href="" class="font-weight-light">Forgotten Passward</a>
+              </div>
+              <div class="form-group">
+                <input  class="form-control" placeholder="Enter Code" name="6_letters_code" type="text">
+                <img src="IMAGE/captcha.jpg" style="height: 37px;">
+                <a href=""class="font-weight-light" type="button"> Refresh Code</a>
+              </div>
+              <!-- <button type="button" name="" value="submit"class="btn btn-warning btn-block">LOGIN</button> -->
+              <input type="submit" class="form-control" name="submit" value="submit" style="background-color: #ffe307">
+          </form>
+        </div>
             <center>
               <h3 style="background-color:#07a6f02b">
                 <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
@@ -705,7 +683,7 @@
           <div class="col-md-4">
             <h4 class="l1 d" style=" text-align: center;">---------OR---------</h4><br>
             <div class="borderradius1" style="text-align: center;">
-            <h4><button type="submit" data-toggle="modal"data-target="#af"class="btn d" style=" background: #fff307;border-color: #000000;border-radius: 10px; width: 190px;height: 50px; font-size: 20px;">LOGIN</button></h4>
+            <h4><button type="submit" data-toggle="modal"data-target="#ag"class="btn d" style=" background: #fff307;border-color: #000000;border-radius: 10px; width: 190px;height: 50px; font-size: 20px;">LOGIN</button></h4>
             </div><br><br>
             <div class="borderradius1" style="text-align: center;">
               <h4><button type="submit"data-toggle="modal"data-target="#ae" class="btn  d" style="background: #fff307; border-color: #000000;border-radius: 10px; width: 190px;height: 50px; font-size: 20px;">REGISTRATION</button></h4>
