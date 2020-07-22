@@ -13,24 +13,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+<!-- <!-- 6QL9UvYjZE3Ipu6Tp75j7Bh --> -->/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-    <script>
-    function login(){
-      alert("Registered Successfully");
-    }
-    </script>
-    <script>
-  $(document).ready(function(){
-    $('#mymodel').modal('show');
-  });
-  </script> 
-      
   </head>
-  <body>
+  <body onload="myFunction()">
+  <div id="loading"></div>
     <div class="modal fade" id="mymodel">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header bg-info lg">
-            <h5 class="modal-title" >Modal title</h5>
+        <div class="modal-content" >
+          <div class="modal-header  lg" style="background:#1309db7d;">
+            <h5 class="modal-title" ><i class="fa fa-bell fa-pad  faa-ring animated" aria-hidden="true" style="color: red"></i>IMPORTANT ALERTS</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -48,7 +38,22 @@
     </div>
   </div>
 </div>
- 
+ <!-- exs -->
+ <!-- <div class="modal fade in" id="alert-modal" style="margin-top: 100px; display: block;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true">
+                        </i></a>
+                        <h4 class="modal-title modal-title-red">
+                            <i class="fa fa-bell fa-pad  faa-ring animated" aria-hidden="true"></i>Important
+                            Alerts</h4>
+                    </div>
+                    <div class="modal-body ">
+                  </div>
+                </div>
+              </div>
+   -->            <!-- end -->
     <!-- navbar start -->
     <div class="container-fluid">
       <nav class="navbar navbar-expand-sm navbar-dark fixed-top a bg">
@@ -803,5 +808,6 @@
     </div>
      <!-- copyright bar end -->
      <script src="JS/visit-bharat.js"></script>
+     
   </body>
 </html>

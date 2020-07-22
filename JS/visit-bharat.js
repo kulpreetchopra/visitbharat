@@ -1,3 +1,14 @@
+
+  var preloader=document.getElementById('loading');
+
+  function myFunction(){
+    preloader.style.display= 'none';
+  }
+  
+$(document).ready(function(){
+    $('#mymodel').modal('show');
+  });
+
 function varification(){
 
           var uname = document.getElementById('uname').value;
