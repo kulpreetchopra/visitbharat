@@ -319,21 +319,30 @@
           </div>
           <div class="modal-body" >
             <div class="form-group">
-      <label>USER ID:</label>
-    <input type="email" name=""  class="form-control" placeholder="Enter Email Or Phone" >
-    </div>
-    <div class="form-group">
-    <label>PASSWARD:</label>
-    <input type="password" name=""class="form-control" placeholder="Enter Password">
-    <a href="" class="font-weight-light">Forgotten Passward</a>
-    </div>
-    <div class="form-group">
-    <input  class="form-control" placeholder="Enter Code" name="6_letters_code" type="text">
-    <img src="IMAGE/captcha.jpg" style="height: 37px;">
-    <a href=""class="font-weight-light" type="button"> Refresh Code</a>
-    </div>
-    <button type="button" name="" value="submit"class="btn btn-warning btn-block">LOGIN</button>
-  </div>
+            <form action="index.html" class="bg-light" onsubmit="return varification()">
+                <label for="user">USER ID:</label>
+                <input type="email" name="user" id="uname" class="form-control" placeholder="Enter Email Or Phone" >
+                <span id="uname1" class="text-danger font-weight-bold"> </span>
+              </div>
+              <div class="form-group">
+                <label for="user">PASSWARD:</label>
+                <input type="password" name="user" id="pass" class="form-control" placeholder="Enter Password">
+                <span id="password" class="text-danger font-weight-bold"> </span>
+                <a href="" class="font-weight-light">Forgotten Passward</a>
+              </div>
+              <div class="form-group">
+          <label for="user" > Confirm Password: </label>
+          <input type="password" id="confirmpass" name="user" class="form-control" >
+          <span id="confirm" class="text-danger font-weight-bold"> </span>
+        </div>
+              <div class="form-group">
+                <input  class="form-control" placeholder="Enter Code" name="6_letters_code" type="text">
+                <img src="IMAGE/captcha.jpg" style="height: 37px;">
+                <a href=""class="font-weight-light" type="button"> Refresh Code</a>
+              </div>
+              <input type="submit" name="submit" value="submit" class="btn btn-warning btn-block">
+          </form>
+        </div>
             <center>
               <h3 style="background-color:#07a6f02b">
                 <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
@@ -349,6 +358,7 @@
     </div>
     <!-- end login -->
 
+
     <!--registration start-->
     <div class="modal fade" id="ah">
       <div class="modal-dialog" >
@@ -360,58 +370,66 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="form-group">
-      <label>FULL NAME:</label>
-      <input type="text" name=""  class="form-control" placeholder="Enter Your Name" >
-    </div>
+          <form action="yatra.html" onsubmit="return Book()">
     <div class="form-group">
-    <label>EMAIL ADDRESS:</label>
-    <input type="Email" name=""  class="form-control" placeholder="Enter Your Email Address">
-    <p class="font-weight-light">We"ll Never Share Your Email With Anyone Else</p>
-    </div>
+      <div class="form-group">
+          <label for="user" > NAME: </label>
+          <input type="text" id="user2" name="user" class="form-control" placeholder="Enter Your Full Name">
+          <span id="username2" class="text-danger font-weight-bold"> </span>
+        </div>
+        <div class="form-group">
+          <label for="user" > EMAIL ADDRESS: </label>
+          <input type="email" id="email2" name="user" class="form-control" placeholder="Enter Your Email Address">
+          <span id="emailid2" class="text-danger font-weight-bold"> </span>
+        </div>
+        <div class="form-group">
+          <label for="user" > MOBILE NUMBER: </label>
+          <input type="mobile" id="mobile2" name="user" class="form-control" placeholder="Enter Your Mobile Number" >
+          <span id="mob2" class="text-danger font-weight-bold"> </span>
+        </div>
+        <div class="form-group">
+          <label for="user" > ADDRESS: </label>
+          <textarea type="text" id="add2" name="user" class="form-control" placeholder="Enter Your Permanent Address" ></textarea>
+          <span id="address2" class="text-danger font-weight-bold"> </span>
+        </div>
     <div class="form-group">
-    <label>MOBILE NUMBER:</label>
-    <input type="digit" name=""  class="form-control" placeholder="Enter Your Mobile Number">
-    </div>
-    <div class="form-group">
-      <label>ADDRESS:</label>
-    <textarea type="text" name=""  class="form-control"  >
-    </textarea>
-    </div>
-    <div class="form-group">
-      <label>Gender:</label>
+        <label for="user" > GENDER: </label>
+        <br>
+      <input type="radio" id="gen2" name="user">Male
       <br>
-      <input type="radio" name="gender">Male
+      <input type="radio" id="gen2"  name="user">FeMale
       <br>
-    <input type="radio" name="gender">FeMale
-    <br>
-    <input type="radio" name="gender">Other
+        <span id="gender2" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
-      <label>SELECT DESTINATION:</label>
+      <label for="user" >SELECT OCCUPATION:</label>
       <br>
-    <select name="" class="form-control" placeholder="Select">
+    <select name="user" id="occu2" class="form-control">
       <option>Select</option>
       <option>Survice</option>
       <option>Bussiness</option>
-      <option>Leader</option>
-      <option>Student</option>
-      <option>Struggler</option>
-      <option>Unemployee</option>
+            <option>Leader</option>
+            <option>Student</option>
+            <option>Struggler</option>
+            <option>Unemployee</option>
+      
     </select>
+    <span id="occupation2" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
-      <label>ENTER TRIP DATE:</label>
-    <input type="date" name=""  class="form-control" >
+      <label for="user" >ENTER TRIP DATE:</label>
+      <input type="date" id="date2" name="user" class="form-control" >
+          <span id="bdate2" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
-      <label>POSTAL/ZIP CODE:</label>
-    <input type="text" name=""  class="form-control" placeholder="Enter Zip Code" >
+      <label for="user" >POSTAL/ZIP CODE:</label>
+    <input type="digit" name="user" id="zip2" class="form-control" placeholder="Enter Zip Code" >
+    <span id="zipcode2" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
-      <label>SELECT TRIP:</label>
+      <label for="user" >SELECT TRIP:</label>
     <br>
-    <select name="" class="form-control" placeholder="Enter Email">
+    <select name="user" id="" class="form-control" >
       <option>Select</option>
       <option>College Trip</option>
       <option>Family Trip</option>
@@ -419,11 +437,12 @@
       <OPTION>Bussiness Trip</OPTION>
       <OPTION>OTHER</OPTION>
     </select>
+    <span id="" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
-      <label>Select Payment Methode:</label>
+      <label for="user" >Select Payment Methode:</label>
       <br>
-    <select name="" class="form-control" >
+    <select name="user" id="" class="form-control" >
       <option>Select</option>
       <option>Online</option>
       <option>Google Pay</option>
@@ -432,24 +451,28 @@
       <OPTION>OTHER</OPTION>
       
     </select>
+    <span id="" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
-    <label>Registered Bank Account Details:</label>
-    <input type="digit" name=""  class="form-control" placeholder="Enter Your Account Number">
-    <input type="digit" name=""  class="form-control" placeholder="Enter Bank IFSC Code">
-    <input type="digit" name=""  class="form-control" placeholder="Enter 4 Digits OTP Number">
+    <label for="user" >Registered Bank Account Details:</label>
+    <input type="digit" name="user" id="acno" class="form-control" placeholder="Enter Your Account Number">
+    <span id="acnumber" class="text-danger font-weight-bold"> </span>
+    <input type="digit" name="user" id="ifscno" class="form-control" placeholder="Enter Bank IFSC Code">
+    <span id="ifscnumber" class="text-danger font-weight-bold"> </span>
+    <input type="digit" name="user" id="otp" class="form-control" placeholder="Enter 4 Digits OTP Number">
+    <span id="otpno" class="text-danger font-weight-bold"> </span>
     </div>
     
     <div class="form-group">
-      <label>DO YOU AGREE WITH TERMS & CONDITIONS:</label>
+      <label for="user" >DO YOU AGREE WITH TERMS & CONDITIONS:</label>
       <br>
-      <input type="radio" name="">Yes
+      <input id="" type="radio" name="">Yes
       <br>
-    <input type="radio" name="">No
+    <input id="" type="radio" name="">No
     <br></div>
-    <button onclick="login()" type="button" name="" value="submit"class="btn btn-warning btn-block">Book Trip</button>
-      
-        </div>
+    <input type="submit" name="submit" value="submit" class="btn btn-warning btn-block">
+    </div>
+  </form>  
         <center>
               <h3 style="background-color:#07a6f02b">
                 <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
@@ -476,26 +499,31 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="form-group">
-      <label>FULL NAME:</label>
-      <input type="text" name=""  class="form-control" placeholder="Enter Your Name" >
-    </div>
-    <div class="form-group">
-    <label>EMAIL ADDRESS:</label>
-    <input type="Email" name=""  class="form-control" placeholder="Enter Your Email Address">
-    <p class="font-weight-light">We"ll Never Share Your Email With Anyone Else</p>
-    </div>
-    <div class="form-group">
-    <label>MOBILE NUMBER:</label>
-    <input type="digit" name=""  class="form-control" placeholder="Enter Your Mobile Number">
-    </div>
-    <div class="form-group">
-            <textarea type="text" name="" class="form-control" placeholder="Message">            </textarea>
-            <p class="font-weight-light">Message</p>
-          </div>
-    <button onclick="login()" type="button" name="" value="submit"class="btn btn-warning btn-block">Book Trip</button>
-      
+            <form action="yatra.html" onsubmit="return Message()">
+     <div class="form-group">
+          <label for="user" > NAME: </label>
+          <input type="text" id="user1" name="user" class="form-control" placeholder="Enter Your Full Name">
+          <span id="username1" class="text-danger font-weight-bold"> </span>
         </div>
+        <div class="form-group">
+          <label for="user" > EMAIL ADDRESS: </label>
+          <input type="email" id="email1" name="user" class="form-control" placeholder="Enter Your Email Address">
+          <p class="font-weight-light">We"ll Never Share Your Email With Anyone Else</p>
+          <span id="emailid1" class="text-danger font-weight-bold"> </span>
+        </div>
+        <div class="form-group">
+          <label for="user" > MOBILE NUMBER: </label>
+          <input type="mobile" id="mobile1" name="user" class="form-control" placeholder="Enter Your Mobile Number" >
+          <span id="mob1" class="text-danger font-weight-bold"> </span>
+        </div>
+        <div class="form-group">
+          <textarea type="text" id="mess" name="user" class="form-control" placeholder="Enter Your Permanent Address" ></textarea>
+          <p class="font-weight-light">Message</p>
+          <span id="message" class="text-danger font-weight-bold"> </span>
+        </div>
+        <input type="submit" name="submit" value="submit" class="btn btn-warning btn-block">
+        </div>
+      </form>
         <center>
               <h3 style="background-color:#07a6f02b">
                 <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
@@ -510,7 +538,6 @@
       </div>
     </div>
     <!-- end message -->
-
     <!-- about start -->
   <div class="container-fluid">
     <div class="container">
@@ -893,5 +920,6 @@
       <br>
     </div>
      <!-- copyright bar end -->
+     <script src="JS/visit-bharat.js"></script>
   </body>
 </html>
