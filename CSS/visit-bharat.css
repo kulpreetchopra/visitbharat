@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fff url('http://www.paudha.co/images/icons/preloader.gif')
+  background: #fff url('https://media.giphy.com/media/toelXGUsYD6vtCN408/giphy.gif')
   no-repeat center;
   z-index: 99999;
 }
@@ -37,13 +37,16 @@
     width: 200px!important;
     height: 60px!important;
   }
+
   .bg{
      background:#1309db7d;
   }
   .sidenav {
     background-color:#1309db7d!important;
   }
-
+.alert{
+    background:#1309db7d!important;
+  }
 
 
 }
@@ -51,6 +54,7 @@
 .i{
   display: none;
 }
+
 .web-logo{
   display: none;
 }
@@ -208,4 +212,7 @@ h1{
 
 label{
     color: #007bff;
+}
+.alert{
+  background:#fff307;
 }
