@@ -1,5 +1,4 @@
-
-  var preloader=document.getElementById('loading');
+var preloader=document.getElementById('loading');
 
   function myFunction(){
     preloader.style.display= 'none';
@@ -14,6 +13,7 @@ function varification(){
           var uname = document.getElementById('uname').value;
           var pass=document.getElementById('pass').value;
           var confirmpass=document.getElementById('confirmpass').value;
+          
 
         if(uname == ""){
         document.getElementById('uname1').innerHTML =" ** Please fill the username field";
