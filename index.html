@@ -368,9 +368,10 @@
           <span id="confirm" class="text-danger font-weight-bold"> </span>
         </div>
               <div class="form-group">
-                <input  class="form-control" placeholder="Enter Code" name="6_letters_code" type="text">
+                <input class="form-control" id="capcha" name="user" placeholder="Enter Code" type="text">
                 <img src="IMAGE/captcha.jpg" style="height: 37px;">
                 <a href=""class="font-weight-light" type="button"> Refresh Code</a>
+                <span id="capcha1" class="text-danger font-weight-bold"> </span>
               </div>
               <input type="submit" name="submit" value="submit" class="btn btn-warning btn-block">
           </form>
@@ -401,88 +402,93 @@
             </button>
           </div>
           <div class="modal-body">
-          <form action="index.html" onsubmit="return Book()">
-    <div class="form-group">
-      <div class="form-group">
+          <form action="login.html" onsubmit="return Book()">
+        <div class="form-group">
           <label for="user" > NAME: </label>
-          <input type="text" id="user2" name="user" class="form-control" placeholder="Enter Your Full Name">
-          <span id="username2" class="text-danger font-weight-bold"> </span>
+          <input type="text" id="user1" name="user" class="form-control" placeholder="Enter Your Full Name">
+          <span id="username1" class="text-danger font-weight-bold"> </span>
         </div>
         <div class="form-group">
           <label for="user" > EMAIL ADDRESS: </label>
-          <input type="email" id="email2" name="user" class="form-control" placeholder="Enter Your Email Address">
-          <span id="emailid2" class="text-danger font-weight-bold"> </span>
+          <input type="email" id="email1" name="user" class="form-control" placeholder="Enter Your Email Address">
+          <span id="emailid1" class="text-danger font-weight-bold"> </span>
         </div>
         <div class="form-group">
           <label for="user" > MOBILE NUMBER: </label>
-          <input type="mobile" id="mobile2" name="user" class="form-control" placeholder="Enter Your Mobile Number" >
-          <span id="mob2" class="text-danger font-weight-bold"> </span>
+          <input type="mobile" id="mobile1" name="user" class="form-control" placeholder="Enter Your Mobile Number" >
+          <span id="mob1" class="text-danger font-weight-bold"> </span>
         </div>
         <div class="form-group">
           <label for="user" > ADDRESS: </label>
-          <textarea type="text" id="add2" name="user" class="form-control" placeholder="Enter Your Permanent Address" ></textarea>
-          <span id="address2" class="text-danger font-weight-bold"> </span>
+          <textarea type="text" id="add1" name="user" class="form-control" placeholder="Enter Your Permanent Address" ></textarea>
+          <span id="address1" class="text-danger font-weight-bold"> </span>
         </div>
-    <div class="form-group">
-        <label for="user" > GENDER: </label>
-        <br>
-      <input type="radio" id="gen2" name="user">Male
+        <div class="form-group">
+          <label for="user" > GENDER: </label>
+          <br>
+      <input type="radio" id="genn1" value="Male" name="user">Male
       <br>
-      <input type="radio" id="gen2"  name="user">FeMale
+      <input type="radio" id="genn2" value="female" name="user">FeMale
       <br>
-        <span id="gender2" class="text-danger font-weight-bold"> </span>
-    </div>
+          <span id="gender1" class="text-danger font-weight-bold"> </span>
+        </div>
     <div class="form-group">
       <label for="user" >SELECT OCCUPATION:</label>
       <br>
-    <select name="user" id="occu2" class="form-control">
-      <option>Select</option>
-      <option>Survice</option>
-      <option>Bussiness</option>
-            <option>Leader</option>
-            <option>Student</option>
-            <option>Struggler</option>
-            <option>Unemployee</option>
-      
-    </select>
-    <span id="occupation2" class="text-danger font-weight-bold"> </span>
+    <select name="user" id="occu1" class="form-control">
+      <option value="-1">Select</option>
+      <option value="1">Survice</option>
+      <option value="2">Bussiness</option>
+            <option value="3">Leader</option>
+            <option value="4">Student</option>
+            <option value="5">Struggler</option>
+            <option value="6">Unemployee</option>
+      </select>
+    <span id="occupation1" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
       <label for="user" >ENTER TRIP DATE:</label>
-      <input type="date" id="date2" name="user" class="form-control" >
-          <span id="bdate2" class="text-danger font-weight-bold"> </span>
+      <input type="date" id="date1" name="user" class="form-control" >
+          <span id="bdate1" class="text-danger font-weight-bold"> </span>
+    </div>
+    <div class="form-group">
+      <label for="user" >YOUR CITY:</label>
+    <input type="text" name="user"  id="city1"  class="form-control" placeholder="Enter Your City" >
+    <span id="ecity1" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
       <label for="user" >POSTAL/ZIP CODE:</label>
-    <input type="digit" name="user" id="zip2" class="form-control" placeholder="Enter Zip Code" >
-    <span id="zipcode2" class="text-danger font-weight-bold"> </span>
+    <input type="digit" name="user" id="zip1" class="form-control" placeholder="Enter Zip Code" >
+    <span id="zipcode1" class="text-danger font-weight-bold"> </span>
     </div>
+    <!--  -->
     <div class="form-group">
       <label for="user" >SELECT TRIP:</label>
-    <br>
-    <select name="user" id="" class="form-control" >
-      <option>Select</option>
-      <option>College Trip</option>
-      <option>Family Trip</option>
-      <OPTION>Couple Trip</OPTION>
-      <OPTION>Bussiness Trip</OPTION>
-      <OPTION>OTHER</OPTION>
-    </select>
-    <span id="" class="text-danger font-weight-bold"> </span>
+      <br>
+    <select name="user" id="state1" class="form-control">
+      <option value="-1">Select</option>
+      <option value="1">College Trip</option>
+      <option value="2">Family Trip</option>
+            <option value="3">Couple Trip</option>
+            <option value="4">Bussiness Trip</option>
+            <option value="5">Honeymoon</option>
+            <option value="6">Other</option>
+      </select>
+    <span id="states1" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
-      <label for="user" >Select Payment Methode:</label>
+      <label for="user" >SELECT PAYEMENT METHODE:</label>
       <br>
-    <select name="user" id="" class="form-control" >
-      <option>Select</option>
-      <option>Online</option>
-      <option>Google Pay</option>
-      <OPTION>NetBank</OPTION>
-      <OPTION>Cash</OPTION>
-      <OPTION>OTHER</OPTION>
-      
-    </select>
-    <span id="" class="text-danger font-weight-bold"> </span>
+    <select name="user" id="country1" class="form-control">
+      <option value="-1">Select</option>
+      <option value="1">Online</option>
+      <option value="2">Google Pay</option>
+      <option value="3">Net Bank</option>
+      <option value="4">Cash</option>
+      <option value="5">Check</option>
+      <option value="6">Other</option>
+      </select>
+    <span id="mcountry1" class="text-danger font-weight-bold"> </span>
     </div>
     <div class="form-group">
     <label for="user" >Registered Bank Account Details:</label>
@@ -493,17 +499,18 @@
     <input type="digit" name="user" id="otp" class="form-control" placeholder="Enter 4 Digits OTP Number">
     <span id="otpno" class="text-danger font-weight-bold"> </span>
     </div>
-    
     <div class="form-group">
-      <label for="user" >DO YOU AGREE WITH TERMS & CONDITIONS:</label>
+      <label for="user" >DO YOU AGREE WITH OUR TERMS AND CONDITIONS: </label>
       <br>
-      <input id="" type="radio" name="">Yes
+      <input type="radio" id="myes1" value="yes" name="user">yes
       <br>
-    <input id="" type="radio" name="">No
-    <br></div>
-    <input type="submit" name="submit" value="submit" class="btn btn-warning btn-block">
+      <input type="radio" id="mno1" value="no" name="user">no
+      <br>
+      <span id="kulp1" class="text-danger font-weight-bold"> </span>
     </div>
-  </form>  
+    <input type="submit"  name="submit" value="submit" class="btn btn-warning btn-block">
+    <br>
+      </form> 
         <center>
               <h3 style="background-color:#07a6f02b">
                 <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
@@ -530,25 +537,25 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="index.html" onsubmit="return Message()">
+            <form action="login.html" onsubmit="return Message()">
      <div class="form-group">
           <label for="user" > NAME: </label>
-          <input type="text" id="user1" name="user" class="form-control" placeholder="Enter Your Full Name">
-          <span id="username1" class="text-danger font-weight-bold"> </span>
+          <input type="text" id="user3" name="user" class="form-control" placeholder="Enter Your Full Name">
+          <span id="username3" class="text-danger font-weight-bold"> </span>
         </div>
         <div class="form-group">
           <label for="user" > EMAIL ADDRESS: </label>
-          <input type="email" id="email1" name="user" class="form-control" placeholder="Enter Your Email Address">
+          <input type="email" id="email3" name="user" class="form-control" placeholder="Enter Your Email Address">
           <p class="font-weight-light">We"ll Never Share Your Email With Anyone Else</p>
-          <span id="emailid1" class="text-danger font-weight-bold"> </span>
+          <span id="emailid3" class="text-danger font-weight-bold"> </span>
         </div>
         <div class="form-group">
           <label for="user" > MOBILE NUMBER: </label>
-          <input type="mobile" id="mobile1" name="user" class="form-control" placeholder="Enter Your Mobile Number" >
-          <span id="mob1" class="text-danger font-weight-bold"> </span>
+          <input type="mobile" id="mobile3" name="user" class="form-control" placeholder="Enter Your Mobile Number" >
+          <span id="mob3" class="text-danger font-weight-bold"> </span>
         </div>
         <div class="form-group">
-          <textarea type="text" id="mess" name="user" class="form-control" placeholder="Enter Your Permanent Address" ></textarea>
+          <textarea type="text" id="mess" name="user" class="form-control" placeholder="Enter Your Message" ></textarea>
           <p class="font-weight-light">Message</p>
           <span id="message" class="text-danger font-weight-bold"> </span>
         </div>
