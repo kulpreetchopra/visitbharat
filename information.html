@@ -367,7 +367,7 @@
             </button>
           </div>
           <div class="modal-body">
-          <form action="login.html" onsubmit="return Book()">
+          <form action="information.html" onsubmit="return Book()">
         <div class="form-group">
           <label for="user" > NAME: </label>
           <input type="text" id="user1" name="user" class="form-control" placeholder="Enter Your Full Name">
@@ -502,7 +502,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="login.html" onsubmit="return Message()">
+            <form action="information.html" onsubmit="return Message()">
      <div class="form-group">
           <label for="user" > NAME: </label>
           <input type="text" id="user3" name="user" class="form-control" placeholder="Enter Your Full Name">
@@ -554,25 +554,31 @@
         <br> 
           <h4 class="text-justify d">SEND US MESSAGE</h4>
           <br>
-          <div class="form-group  ">
-            <input type="text" name=""  class="form-control" placeholder="Name" >
-          </div>
-          <br>
-          <div class="form-group">
-            <input type="Email" name=""  class="form-control" placeholder="Email">
-          </div>
-          <br>
-          <div class="form-group">
-            <input type="digit" name=""  class="form-control" placeholder="Phone">
-          </div>
-          <br>
-          <div class="form-group">
-            <textarea type="text" name=""  class="form-control" placeholder="Message">
-            </textarea>
-            <p class="font-weight-light">Message</p>
-          </div>
-          <button type="button" class="btn btn-warning c">Submit</button>
+        <form action="information.html" onsubmit="return Messageme()">
+     <div class="form-group">
+          <label for="user" > NAME: </label>
+          <input type="text" id="user4" name="user" class="form-control" placeholder="Enter Your Full Name">
+          <span id="username4" class="text-danger font-weight-bold"> </span>
         </div>
+        <div class="form-group">
+          <label for="user" > EMAIL ADDRESS: </label>
+          <input type="email" id="email4" name="user" class="form-control" placeholder="Enter Your Email Address">
+          <p class="font-weight-light">We"ll Never Share Your Email With Anyone Else</p>
+          <span id="emailid4" class="text-danger font-weight-bold"> </span>
+        </div>
+        <div class="form-group">
+          <label  for="user" > MOBILE NUMBER: </label>
+          <input type="mobile" id="mobile4" name="user" class="form-control" placeholder="Enter Your Mobile Number" >
+          <span id="mob4" class="text-danger font-weight-bold"> </span>
+        </div><br>
+        <div class="form-group">
+          <textarea type="text" id="mess1" name="user" class="form-control" placeholder="Enter Your Message" ></textarea>
+          <p class="font-weight-light">Message</p>
+          <span id="message1" class="text-danger font-weight-bold"> </span>
+        </div>
+        <input style="margin-top: 5%" type="submit" name="submit" value="submit" class="btn btn-warning btn-block">
+        </div>
+      </form>
         <br>
         <div class="col-md-6">
           <br>
